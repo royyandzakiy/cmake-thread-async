@@ -8,6 +8,38 @@
 
 using namespace std::chrono_literals;
 
+void case1();
+void case2();
+void case3();
+void case4();
+void case5();
+void case6();
+
+int main()
+{
+	std::cout << "=== Starting Case 1 ===\n";
+	case1();
+
+	std::cout << "\n=== Starting Case 2 ===\n";
+	case2();
+
+	std::cout << "\n=== Starting Case 3 ===\n";
+	case3();
+
+	std::cout << "\n=== Starting Case 4 ===\n";
+	case4();
+
+	std::cout << "\n=== Starting Case 5 ===\n";
+	case5();
+
+	std::cout << "\n=== Starting Case 6 ===\n";
+	case6();
+
+	return 0;
+}
+
+// ============================================
+
 // Case 1: Demonstrates this_thread and sleep_for
 void case1()
 {
@@ -306,27 +338,4 @@ void case6()
 
 	// Give detached threads time to complete before program exits
 	std::this_thread::sleep_for(1s);
-}
-
-int main()
-{
-	std::cout << "=== Starting Case 1 ===\n";
-	case1();
-
-	std::cout << "\n=== Starting Case 2 ===\n";
-	case2();
-
-	std::cout << "\n=== Starting Case 3 ===\n";
-	case3();
-
-	std::cout << "\n=== Starting Case 4 ===\n";
-	case4();
-
-	std::cout << "\n=== Starting Case 5 ===\n";
-	case5();
-
-	std::cout << "\n=== Starting Case 6 ===\n";
-	case6();
-
-	return 0;
 }
