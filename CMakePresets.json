@@ -8,13 +8,10 @@
 	"configurePresets": [
 		{
 			"name": "base",
-			"description": "Sets generator, build and install directory, vcpkg",
+			"description": "Sets generator, build and install directory",
 			"hidden": true,
 			"generator": "Ninja",
-			"binaryDir": "${sourceDir}/build/${presetName}",
-			"cacheVariables": {
-				"CMAKE_TOOLCHAIN_FILE": "$env{VCPKG_ROOT}/scripts/buildsystems/vcpkg.cmake"
-			}
+			"binaryDir": "${sourceDir}/build/${presetName}"
 		},
 		{
 			"name": "windows-base",
