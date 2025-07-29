@@ -1,0 +1,38 @@
+{
+	"$schema": "https://raw.githubusercontent.com/microsoft/vcpkg/master/scripts/vcpkg.schema.json",
+	"name": "cmake-thread-async",
+	"version": "1.0",
+	"description": "A C++ project demonstrating CMake Presets and Vcpkg integration.",
+	"homepage": "https://github.com/royyandzakiy/cmake-project-template",
+	"license": "MIT",
+	"maintainers": [
+		"Royyan <royyan.abdul@gmail.com>"
+	],
+	"dependencies": [
+		{
+			"name": "fmt",
+			"version>=": "10.1.1"
+		}
+	],
+	"features": {
+		"tests": {
+			"description": "Enable unit tests using Google Test",
+			"dependencies": [
+				{
+					"name": "gtest",
+					"version>=": "1.14.0"
+				}
+			]
+		}
+	},
+	"default-features": [
+		"tests"
+	],
+	"builtin-baseline": "8f63c9ed5897d7367a92a442a79f91721e0fd38f",
+	"overrides": [
+		{
+			"name": "fmt",
+			"version": "10.1.1"
+		}
+	]
+}

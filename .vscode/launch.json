@@ -1,0 +1,46 @@
+{
+	"version": "0.2.0",
+	"configurations": [
+		{
+			"name": "Debug (Windows)",
+			"type": "cppvsdbg",
+			"request": "launch",
+			"program": "${command:cmake.launchTargetPath}",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"console": "externalTerminal",
+			"preLaunchTask": "Build (Windows)"
+		},
+		{
+			"name": "Debug (Linux)",
+			"type": "cppdbg",
+			"request": "launch",
+			"program": "${command:cmake.launchTargetPath}",
+			"args": [],
+			"stopAtEntry": false,
+			"cwd": "${workspaceFolder}",
+			"environment": [],
+			"externalConsole": false,
+			"MIMode": "gdb",
+			"setupCommands": [
+				{
+					"description": "Enable pretty-printing for gdb",
+					"text": "-enable-pretty-printing",
+					"ignoreFailures": true
+				}
+			],
+			"preLaunchTask": "Build (Linux)"
+		},
+		{
+			"name": "Debug (macOS)",
+			"type": "lldb",
+			"request": "launch",
+			"program": "${command:cmake.launchTargetPath}",
+			"args": [],
+			"cwd": "${workspaceFolder}",
+			"preLaunchTask": "Build (macOS)"
+		}
+	]
+}
